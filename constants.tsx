@@ -43,11 +43,12 @@ export const SERVICES: Service[] = [
     icon: Server,
     bullets: [
       'Linux Server Administration',
+      'Jenkins CI/CD Automation',
       'Nginx & Apache Configuration',
-      'System Monitoring & Alerting',
-      'SSL/TLS Certificate Mgmt'
+      'Linux/Windows OS Monitoring',
+      'Web Scraper Hosting'
     ],
-    deliverables: ['Server Setup', 'Monitoring Dashboard', 'Uptime Reports']
+    deliverables: ['Server Setup', 'Monitoring Dashboard', 'Uptime Reports', 'CI/CD Pipelines']
   },
   {
     id: 'entra-id',
@@ -118,20 +119,20 @@ export const PROJECTS: Project[] = [
     id: 'web-hosting-stack',
     title: 'High-Availability Web Hosting',
     summary: 'Architected a robust Linux-based web hosting environment using Nginx and Apache.',
-    tags: ['Linux', 'Nginx', 'Apache', 'Web Hosting'],
+    tags: ['Linux', 'Nginx', 'Apache', 'Web Hosting', 'Jenkins'],
     date: '2024',
     challenge: 'Required a stable and scalable web hosting environment to support multiple client websites with varying traffic loads.',
-    solution: 'Deployed Linux servers configured with Nginx as a reverse proxy in front of Apache, implemented comprehensive system monitoring, and automated SSL renewals.',
+    solution: 'Deployed Linux servers configured with Nginx as a reverse proxy in front of Apache, implemented Jenkins for automated updates, and monitored OS health.',
     outcome: 'Achieved 99.9% uptime, improved page load speeds via caching, and established real-time alerts for server health.'
   },
   {
     id: 'data-scraper',
     title: 'Automated Data Extraction Engine',
     summary: 'Developed Python scrapers to gather market data and identify feed anomalies.',
-    tags: ['Python', 'Automation', 'Web Scraping', 'APIs'],
+    tags: ['Python', 'Automation', 'Web Scraping', 'APIs', 'Linux Hosting'],
     date: '2023 - 2024',
     challenge: 'Manual verification of RSS feeds, API endpoints, and website metadata was time-consuming and prone to human error.',
-    solution: 'Built custom Python scripts using BeautifulSoup and Selenium to scrape target data sources, validate integrity, and generate automated reports.',
+    solution: 'Built custom Python scripts using BeautifulSoup and Selenium hosted on specialized Linux instances, with integrity validation and automated reporting.',
     outcome: 'Reduced manual data verification time by 80% and proactively identified metadata anomalies before they affected client services.'
   },
   {
@@ -155,7 +156,8 @@ export const EXPERIENCE: Experience[] = [
     description: [
       'Manage hybrid identity using Microsoft Entra ID, Azure AD Connect, and on-prem Active Directory.',
       'Administer M365 services (Exchange, Teams, SharePoint) and hybrid server environments (AVD, VMware, AWS via Azure Arc).',
-      'Deploy Windows servers and manage network security (Firewalls, DNS, Public IPs).',
+      'Manage Linux-based web hosting infrastructure using Nginx/Apache with Jenkins for automated deployments.',
+      'Implement comprehensive monitoring for both Linux and Windows OS environments to ensure high availability.',
       'Automate admin tasks using PowerShell and Python; lead Exchange upgrades and Azure migrations.'
     ]
   },
@@ -197,8 +199,8 @@ export const EXPERIENCE: Experience[] = [
 export const SKILLS: SkillCategory[] = [
   { category: 'Microsoft 365 & Identity', skills: ['M365 Admin', 'Exchange Online', 'Entra ID', 'Azure AD Connect', 'Teams Admin', 'SharePoint'] },
   { category: 'Azure & Infrastructure', skills: ['Azure Arc', 'Azure Virtual Desktop', 'VMware vSphere', 'Windows Server', 'Hyper-V'] },
-  { category: 'Linux & Web Hosting', skills: ['Linux Admin', 'Nginx', 'Apache', 'System Monitoring', 'Web Hosting', 'SSL/TLS'] },
-  { category: 'Automation & Dev', skills: ['PowerShell', 'Python', 'JavaScript', 'React JS', 'Web Scraping', 'Local LLMs'] }
+  { category: 'Linux & Web Hosting', skills: ['Linux Admin', 'Jenkins CI/CD', 'Nginx', 'Apache', 'OS Monitoring', 'Web Hosting', 'SSL/TLS'] },
+  { category: 'Automation & Dev', skills: ['PowerShell', 'Python', 'Jenkins', 'JavaScript', 'React JS', 'Web Scraping', 'Local LLMs'] }
 ];
 
 export const CERTIFICATIONS: Certification[] = [
