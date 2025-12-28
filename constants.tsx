@@ -9,7 +9,8 @@ import {
   Database,
   Code,
   Cpu,
-  Globe
+  Globe,
+  Wrench
 } from 'lucide-react';
 import { Service, Project, Experience, SkillCategory, Certification } from './types';
 
@@ -19,6 +20,7 @@ export const NAVIGATION_LINKS = [
   { name: 'Projects', path: '/projects' },
   { name: 'CV / About', path: '/about' },
   { name: 'Certifications', path: '/certifications' },
+  { name: 'Free Tools', path: '/tools' },
   { name: 'Contact', path: '/contact' },
 ];
 
